@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/marvinwebsite/static/css/main.6e07368e.css",
+    "main.js": "/marvinwebsite/static/js/main.3bcd5641.js",
+    "static/media/banner3.jpg": "/marvinwebsite/static/media/banner3.99a64151935bfe524902.jpg",
+    "index.html": "/marvinwebsite/index.html",
+    "main.6e07368e.css.map": "/marvinwebsite/static/css/main.6e07368e.css.map",
+    "main.3bcd5641.js.map": "/marvinwebsite/static/js/main.3bcd5641.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e07368e.css",
+    "static/js/main.3bcd5641.js"
+  ]
+}
