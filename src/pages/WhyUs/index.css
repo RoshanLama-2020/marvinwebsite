@@ -1,0 +1,66 @@
+.page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)),
+    url(../../../public/images/banner3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page h4 {
+  font-size: 2rem;
+}
+.page > h4 {
+  text-align: center;
+  padding: 80px;
+}
+.page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+.page-footer_para {
+  font-size: 1.3rem;
+}
+.page-footer_btn {
+  text-align: center;
+  display: block;
+  text-decoration: none;
+  padding: 8px 20px;
+  background-color: #fff;
+  color: var(--color-pri);
+  border: 2px solid var(--color-pri);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: "Bree Serif", serif;
+  transition: all ease 0.5s;
+  white-space: nowrap;
+}
+.page-footer_btn:hover {
+  background-color: var(--color-pri);
+  color: var(--color-white);
+}
+@media screen and (max-width: 715px) {
+  .page-footer {
+    flex-direction: column;
+  }
+  .page-footer_heading {
+    text-align: center;
+  }
+  .page-footer_para {
+    text-align: justify;
+  }
+}
+
+/* banner ends here */
+
+.page-center {
+  background-color: #eaeaea;
+  display: flex;
+  justify-content: center;
+}
+
+.page-logo {
+  padding-top: 80px;
+  padding-bottom: 40px;
+}

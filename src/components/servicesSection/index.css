@@ -1,0 +1,106 @@
+.service-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  color: var(--clr-grey-2);
+}
+
+.service-title_heading span {
+  font-family: Lato;
+  color: var(--color-pri);
+}
+.service-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  gap: 30px;
+}
+.service-desc_img {
+  width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 980px) {
+  .service-desc {
+    grid-template-rows: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-desc_img {
+    width: 300px;
+  }
+}
+
+.service-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.service-cart {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--clr-grey-9);
+  box-shadow: var(--light-shadow);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  overflow: hidden;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.service-cart:hover{
+  box-shadow: var(--dark-shadow);
+}
+.service-cart_img {
+  object-fit: fil;
+  min-height: 300px;
+}
+.service-cart_desc {
+  background-color: #f5f5f5;
+  padding: 30px;
+  color: var(--clr-grey-4);
+  height: 100%;
+}
+
+.service-cart_heading {
+  color: var(--color-pri);
+  text-align: center;
+}
+
+.service-cart_para {
+  text-align: justify;
+}
+
+@media screen and (max-width: 980px) {
+  .service-desc {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .service-desc {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .service-cart_desc {
+    height: auto;
+  }
+  .service-cart_img {
+    height: 200px;
+  }
+}
+

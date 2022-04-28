@@ -1,0 +1,104 @@
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.img-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 24px;
+  width: 300px;
+  height: 300px;
+  background: rgba(25, 25, 25, 0.55);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  box-shadow: var(--light-shadow);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.img-section:hover {
+  box-shadow: var(--dark-shadow);
+}
+
+.img-section:hover .img-section_icon svg {
+  background: green;
+}
+.img-section_icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-section_icon svg {
+  font-size: 42px;
+  color: #fff;
+  padding: 24px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #fff;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.img-section_details {
+  margin-top: 20px;
+  text-align: center;
+}
+.img-section_details h4 {
+  color: #4eae3a;
+}
+.img-section_para {
+  color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+  .img-container {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  .img-section {
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: auto;
+  }
+  .img-section_icon {
+    margin: 0;
+    width: auto;
+  }
+  .img-section_details {
+    margin-left: 20px;
+  }
+  .img-section_details h4 {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  .img-section_icon svg {
+    padding: 16px;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .img-section{
+    flex-direction: column;
+  }
+  .img-section_icon{
+    width: 100%;
+  }
+}
